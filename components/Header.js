@@ -54,7 +54,7 @@ function Header() {
       </div>
 
       {/* Right */}
-      <div className="flex items-center sm:space-x-2 justify-end">
+      <div className="flex items-center sm:space-x-2 justify-end ml-4">
         {/* profile pic */}
         <Image
           onClick={() => signOut()}
@@ -65,7 +65,7 @@ function Header() {
           layout="fixed"
         />
 
-        <p className=" whitespace-nowrap font-semibold pr-3 ml-2">
+        <p className="truncate whitespace-nowrap font-semibold pr-3 ml-2 ">
           {session.user.name}
         </p>
         <ViewGridIcon className="icon" />
